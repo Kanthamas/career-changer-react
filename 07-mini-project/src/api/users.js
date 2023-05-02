@@ -1,4 +1,5 @@
 class UsersControl {
+<<<<<<< HEAD
   init = () => {
     if (localStorage.getItem("users") === null) {
       localStorage.setItem(
@@ -27,6 +28,40 @@ class UsersControl {
           },
         ])
       );
+=======
+
+    init = () => {
+        if(localStorage.getItem('users') === null){
+            localStorage.setItem('users', JSON.stringify([
+                {
+                    username: 'admin',
+                    password: 'admin',
+                    fullname: 'admin admin',
+                    organization: 'Generation Thailand',
+                    role: 'admin'
+                },
+                {
+                    username: 'user1',
+                    password: 'user1',
+                    fullname: 'user1 user1',
+                    organization: 'Generation Thailand',
+                    role: 'user'
+                },
+                {
+                    username: 'user2',
+                    password: 'user2',
+                    fullname: 'user2 user2',
+                    organization: 'Generation Thailand',
+                    role: 'user'
+                }
+            ]))
+        }
+
+        if(localStorage.getItem('current-user') === null) {
+            localStorage.setItem('current-user', JSON.stringify({}))
+        }
+        
+>>>>>>> 845cd43769fe56d973c77c0f9a098ed7aa431436
     }
 
     if (localStorage.getItem("current-user") === null) {

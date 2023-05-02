@@ -15,6 +15,7 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
+<<<<<<< HEAD
     path: "/signup",
     element: <Signup />,
   },
@@ -23,6 +24,16 @@ const router = createBrowserRouter([
     element: <Login />,
   },
 ]);
+=======
+    path: '/login',
+    element: <Login />
+  },
+  {
+    path: '/signup',
+    element: <Signup />
+  }
+])
+>>>>>>> 845cd43769fe56d973c77c0f9a098ed7aa431436
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <UserContext>
